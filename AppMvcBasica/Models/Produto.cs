@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace AppMvcBasica.Models
@@ -23,6 +24,8 @@ namespace AppMvcBasica.Models
         public decimal Valor { get; set; }
 
         public DateTime DataCadastro { get; set; }
+        
+        [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
 
         /* EF Relation */
